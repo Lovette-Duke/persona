@@ -28,6 +28,3 @@ buttonEl.addEventListener('click', function() {
 
 
 });
-function populate(){
-
-}
