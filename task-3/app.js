@@ -1,26 +1,33 @@
-$(function () {
+// $(function () {
 
-	$('#add').on('click', function(event) {
-		event.preventDefault();
+// 	$('#add').on('click', function(event) {
+// 		event.preventDefault();
 		
-		const listTag = document.createElement('li');
+// 		const listTag = document.createElement('li');
 
-		let textField = $('#textfield').val();
+// 		let textField = $('#textfield').contents();
 
-		listTag.append(textfield);
+// 		listTag.append(textfield);
 
-		$('#list').append(listTag);
+// 		$('#list').append(listTag);
 
-	});
+// 	});
+
+// });
+
+var buttonEl = document.getElementById('add');
+
+buttonEl.addEventListener('click', function() {
+
+	var wishList = document.createElement("LI");
+	var textField = document.createTextNode(document.getElementById("textfield").value);
+
+		wishList.appendChild(textField);
+
+		document.getElementById('list').appendChild(wishList);
+
 
 });
+function populate(){
 
-// function populate(){
-// 	var wishList = document.createElement("LI");
-// 	var textField = document.createTextNode(document.getElementById("textfield").value);
-
-// 		wishList.appendChild(textField);
-
-// 		document.getElementById('list').appendChild(wishList);
-
-// }
+}
